@@ -16,6 +16,8 @@ gcc -O0 -pthread -o lab003 lab003.c
 
 While running, analyze the application in as much detail as possible. As with [lab1](lab1.md), you can use BPF tools from BCC, bpftrace, and the book for analysis. You an also use traditional tools, except those that perturb performance (e.g., strace(1) and tcpdump(8)).
 
+When you have finished your analysis, remember to kill the lab003 process.
+
 ## References
 
 - [BCC tools](https://github.com/iovisor/bcc#tools)
