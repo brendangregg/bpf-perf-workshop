@@ -1,8 +1,8 @@
 # BPF Performance Tools Workshop
 
-This is a 90-minute workshop created by Brendan Gregg, and uses some exercises from the book [BPF Performance Tools: Linux System and Application Observability](http://www.brendangregg.com/bpf-performance-tools-book.html). BPF enables a new class of custom, efficient, and production safe performance analysis tools. BPF itself is now a technology name and no longer an acronym. BPF is part of the Linux kernel.
+This is a 90-minute workshop created by Brendan Gregg, and uses some exercises from the book [BPF Performance Tools: Linux System and Application Observability](http://www.brendangregg.com/bpf-performance-tools-book.html). BPF enables a new class of custom, efficient, and production safe performance analysis tools. Historically BPF stood for Berkeley Packet Filter, but since it has become a general purpose execution environment it is now a technology name and no longer an acronym. BPF is part of the Linux kernel.
 
-This workshop is composed of slides, exercises, discussion, and demos. This repository contains two of those four parts: the slides and exercises, the other two are only available in class,
+This workshop is composed of slides, exercises, discussion, and demos. This repository contains two of those four parts: the slides and exercises, the other two are only available in class.
 
 ## Prerequisites
 
