@@ -15,6 +15,7 @@ You can either:
 
 You may wish to open these in tabs. For labs 1-3:
 
+- [BCC tools](https://github.com/iovisor/bcc#tools)
 - [BCC tutorial](https://github.com/iovisor/bcc/blob/master/docs/tutorial.md)
 
 For labs 4-5:
