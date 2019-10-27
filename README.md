@@ -4,7 +4,7 @@ This is a 90-minute workshop created by Brendan Gregg, and uses some exercises f
 
 This workshop is composed of slides, exercises, discussion, and demos. This repository contains two of those four parts: the slides and exercises, the other two are only available in class.
 
-[Slides](LISA2019_BPF_Performance_Tools.pdf)
+- [USENIX LISA2019 Slides](LISA2019_BPF_Performance_Tools.pdf) (PDF)
 
 ## Prerequisites
 
