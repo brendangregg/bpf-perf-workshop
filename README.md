@@ -13,12 +13,12 @@ You can either:
 
 ## References
 
-You may wish to open these in tabs. For labs 1-3:
+You may wish to open these in tabs. For labs 1-3 (BCC):
 
 - [BCC tools](https://github.com/iovisor/bcc#tools)
 - [BCC tutorial](https://github.com/iovisor/bcc/blob/master/docs/tutorial.md)
 
-For labs 4-5:
+For labs 4-5 (bpftrace):
 
 - [bpftrace tutorial](https://github.com/iovisor/bpftrace/blob/master/docs/tutorial_one_liners.md)
 - [bpftrace reference guide](https://github.com/iovisor/bpftrace/blob/master/docs/reference_guide.md)
