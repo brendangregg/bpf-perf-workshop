@@ -6,26 +6,21 @@ An application has higher-than expected latency, including latency outliers. Why
 
 ## Instructions
 
-To compile and run the application:
+To run the application:
 
 ```
-cd src
-gcc -O0 -o lab001 lab001.c
 ./lab001 &
 ```
 
-While running, you can use any BPF tool to investigate performance. See the References below. You will need to run them as root, so `sudo bash` first for a root shell. Both BCC and bpftrace tools are installed on the student (Ubuntu) systems in your $PATH, so using tab completion:
-
-```
-# opensnoop<tab><tab>
-opensnoop-bpfcc  opensnoop.bt 
-```
-
-opensnoop-bpfcc is the BCC version, and opensnoop.bt is the bpftrace version.
-
-You can also use traditional tools, including top(1), vmstat(1), mpstat(1), iostat(1), and sar(1), provided they do not perturb performance -- this is a (pretend) production system! That means strace(1) and tcpdump(8) are forbidden. Use BPF equivalents instead.
+While running, you can use any BPF tool to investigate performance. See the References below. You will need to run them as root, so `sudo bash` first for a root shell. You can also use traditional tools, including top(1), vmstat(1), mpstat(1), iostat(1), and sar(1), provided they do not perturb performance -- this is a (pretend) production system! That means strace(1) and tcpdump(8) are forbidden. Use BPF equivalents instead.
 
 When you have finished your analysis, remember to kill the lab001 process.
+
+## Help! I'm completely lost
+
+If you don't know where to start, you can try the "0. Before bcc" and "1. General Performance" checklists from my [BCC tutorial](https://github.com/iovisor/bcc/blob/master/docs/tutorial.md). These won't find everything, but are a good start.
+
+Later in this workshop I'll introduce methodologies to help you begin performance analysis.
 
 ## References
 

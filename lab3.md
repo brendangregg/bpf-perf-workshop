@@ -6,11 +6,9 @@ The application has high CPU usage even though it isn't serving many (or any) re
 
 ## Instructions
 
-To compile and run the application:
+To run the application:
 
 ```
-cd src
-gcc -O0 -pthread -o lab003 lab003.c
 ./lab003 &
 ```
 
