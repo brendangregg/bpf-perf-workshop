@@ -8,9 +8,21 @@
 
 const char *datafile = "lab001.data";
 
-#define BUFSIZE		(1 * 1024)
-#define BIGSIZE		(5 * 1024 * 1024)
+#define BUFSIZE		(1 * 128)
+#define BIGSIZE		(2 * 1024 * 1024)
 #define FILESIZE	(50 * 1024 * 1024)
+
+ssize_t
+os_write(int fd, const void *buf, size_t count)
+{
+        return write(fd, buf, count);
+}
+
+ssize_t
+debugdump(int fd, const void *buf, size_t count)
+{
+        return os_write(fd, buf, count);
+}
 
 void
 write_log(int fd)
@@ -30,11 +42,11 @@ write_log(int fd)
 
 	for (;;) {
 		for (i = 0, j = 0; i < FILESIZE;) {
-			if ((j++ % 100) == 50) {
-				ret = write(fd, big, BIGSIZE);
+			if ((j++ % 1000) == 50) {
+				ret = debugdump(fd, big, BIGSIZE);
 				i += BIGSIZE;
 			} else {
-				ret = write(fd, buf, BUFSIZE);
+				ret = os_write(fd, buf, BUFSIZE);
 				i += BUFSIZE;
 			}
 
@@ -59,7 +71,7 @@ main()
 {
 	int fd;
 
-	if ((fd = open(datafile, O_CREAT | O_WRONLY | O_SYNC, 0644)) < 0) {
+	if ((fd = open(datafile, O_CREAT | O_WRONLY | O_DSYNC, 0644)) < 0) {
 		printf("ERROR: writing to %s\n", datafile);
 		exit(1);
 	}
