@@ -42,7 +42,7 @@ write_log(int fd)
 
 	for (;;) {
 		for (i = 0, j = 0; i < FILESIZE;) {
-			if ((j++ % 1000) == 50) {
+			if ((j++ % 200) == 50) {
 				ret = debugdump(fd, big, BIGSIZE);
 				i += BIGSIZE;
 			} else {
