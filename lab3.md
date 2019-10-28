@@ -9,6 +9,7 @@ The application has high CPU usage even though it isn't serving many (or any) re
 To run the application:
 
 ```
+cd bpf-perf-workshop
 ./lab003 &
 ```
 

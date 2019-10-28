@@ -9,6 +9,7 @@ An application has higher-than expected latency, including latency outliers. Why
 To run the application:
 
 ```
+cd bpf-perf-workshop
 ./lab001 &
 ```
 
