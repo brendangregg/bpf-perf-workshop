@@ -13,6 +13,35 @@ You can either:
 - SSH to a lab instance (see bit of paper), or,
 - Setup your own system. Install [BCC](https://github.com/iovisor/bcc) & [bpftrace](https://github.com/iovisor/bpftrace), this repo, and extra tools from [bpf-perf-tools-book](https://github.com/brendangregg/bpf-perf-tools-book).
 
+If you choose to setup your own system, here is a script for Ubuntu:
+
+```
+apt-get update
+apt-get install sysstat bpfcc-tools bpftrace gcc
+git clone https://github.com/brendangregg/bpf-perf-tools-book
+```
+
+Just for reference, you can fetch these repos:
+
+```
+git clone https://github.com/iovisor/bcc
+git clone https://github.com/iovisor/bpftrace
+```
+
+## Checking your system works
+
+Testing the opensnoop(8) tool from both BCC and bpftrace (Ubuntu package naming scheme: BCC tools end in -bpfcc, and bpftrace .bt):
+
+```
+$ <b>sudo bash</b>
+# <b>opensnoop-bpfcc</b>
+[...]
+# <b>opensnoop.bt</b>
+[...]
+```
+
+Those should produce output and not error. Ctrl-C to end each.
+
 ## References
 
 You may wish to open these in tabs. For labs 1-3 (BCC):
@@ -24,6 +53,7 @@ For labs 4-5 (bpftrace):
 
 - [bpftrace tutorial](https://github.com/iovisor/bpftrace/blob/master/docs/tutorial_one_liners.md)
 - [bpftrace reference guide](https://github.com/iovisor/bpftrace/blob/master/docs/reference_guide.md)
+- [bpftrace tools](https://github.com/iovisor/bpftrace#tools)
 - [BPF book tools](https://github.com/brendangregg/bpf-perf-tools-book#tools)
 
 ## Labs
