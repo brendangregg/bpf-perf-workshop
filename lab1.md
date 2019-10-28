@@ -19,7 +19,12 @@ When you have finished your analysis, remember to kill the lab001 process.
 
 ## Help! I'm completely lost
 
-If you don't know where to start, you can try the "0. Before bcc" and "1. General Performance" checklists from my [BCC tutorial](https://github.com/iovisor/bcc/blob/master/docs/tutorial.md). These won't find everything, but are a good start.
+If you don't know where to start, you can try working through the following checklists:
+
+- [0. Before bcc](https://github.com/iovisor/bcc/blob/master/docs/tutorial.md#0-before-bcc)
+- [1. General Performance](https://github.com/iovisor/bcc/blob/master/docs/tutorial.md#1-general-performance)
+
+These are from my [BCC tutorial](https://github.com/iovisor/bcc/blob/master/docs/tutorial.md). These won't find everything, but are a good start.
 
 Later in this workshop I'll introduce methodologies to help you begin performance analysis.
 
