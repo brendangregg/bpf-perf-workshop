@@ -16,8 +16,8 @@ You can either:
 If you choose to setup your own system, here is a script for Ubuntu:
 
 ```
-apt-get update
-apt-get install sysstat bpfcc-tools bpftrace gcc
+sudo apt-get update
+sudo apt-get install sysstat bpfcc-tools bpftrace gcc
 git clone https://github.com/brendangregg/bpf-perf-tools-book
 ```
 
@@ -32,13 +32,13 @@ git clone https://github.com/iovisor/bpftrace
 
 Testing the opensnoop(8) tool from both BCC and bpftrace (Ubuntu package naming scheme: BCC tools end in -bpfcc, and bpftrace .bt):
 
-```
+<pre>
 $ <b>sudo bash</b>
 # <b>opensnoop-bpfcc</b>
 [...]
 # <b>opensnoop.bt</b>
 [...]
-```
+</pre>
 
 Those should produce output and not error. Ctrl-C to end each.
 
