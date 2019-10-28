@@ -21,6 +21,8 @@ If you choose to setup your own system, here is a script for Ubuntu:
 sudo apt-get update
 sudo apt-get install sysstat bpfcc-tools bpftrace gcc
 git clone https://github.com/brendangregg/bpf-perf-tools-book
+cd bpf-perf-tools-book/src
+make && cd ..
 ```
 
 Just for reference, you can fetch these repos:
