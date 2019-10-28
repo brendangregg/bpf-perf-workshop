@@ -11,9 +11,9 @@ This workshop is composed of slides, exercises, discussion, and demos. This repo
 You can either:
 
 - SSH to a lab instance (see bit of paper), or,
-- Setup your own system. Install [BCC](https://github.com/iovisor/bcc) & [bpftrace](https://github.com/iovisor/bpftrace), this repo, and extra tools from [bpf-perf-tools-book](https://github.com/brendangregg/bpf-perf-tools-book).
+- Setup your own system with [BCC](https://github.com/iovisor/bcc) & [bpftrace](https://github.com/iovisor/bpftrace). Sample instructions below.
 
-### System Setup
+#### System Setup
 
 If you choose to setup your own system, here is a script for Ubuntu:
 
