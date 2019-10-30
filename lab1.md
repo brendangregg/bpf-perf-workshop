@@ -6,14 +6,16 @@ An application has higher-than expected latency, including latency outliers. Why
 
 ## Instructions
 
-To run the application:
+To run the application.
 
 ```
 cd bpf-perf-workshop
 ./lab001 &
 ```
 
-While running, you can use any BPF tool to investigate performance. See the References below. You will need to run them as root, so `sudo bash` first for a root shell. You can also use traditional tools, including top(1), vmstat(1), mpstat(1), iostat(1), and sar(1), provided they do not perturb performance -- this is a (pretend) production system! That means strace(1) and tcpdump(8) are forbidden. Use BPF equivalents instead.
+lab001 simulates a performance issue based on previous real world problems. It does not include application logic: for simplicity, it only executes the problem.
+
+While lab001 is running, you can use any BPF tool to investigate performance. See the References below. You will need to run them as root, so `sudo bash` first for a root shell. You can also use traditional tools, including top(1), vmstat(1), mpstat(1), iostat(1), and sar(1), provided they do not perturb performance -- this is a (pretend) production system! That means strace(1) and tcpdump(8) are forbidden. Use BPF equivalents instead.
 
 When you have finished your analysis, remember to kill the lab001 process.
 

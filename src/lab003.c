@@ -8,6 +8,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <sys/syscall.h>
 
 const char *datafile = "lab003.data";
 
@@ -37,6 +38,15 @@ init_data()
 	close(fd);
 }
 
+ssize_t
+os_read(int fd, void *buf, size_t count)
+{
+	// See what happens if you use read() instead of syscall():
+	//
+	// return read(fd, buf, count);
+	return syscall(SYS_read, fd, buf, count);
+}
+
 void
 load_data()
 {
@@ -48,7 +58,7 @@ load_data()
 		exit(2);
 	}
 
-	for (;;) { read(fd, &buf, 0); }
+	for (;;) { os_read(fd, &buf, 0); }
 
 	(void) close(fd);
 }
