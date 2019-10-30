@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-const char *datafile = "lab001.data";
+const char *datafile = "lab001.log";
 
 #define BUFSIZE		(1 * 128)
 #define BIGSIZE		(2 * 1024 * 1024)
