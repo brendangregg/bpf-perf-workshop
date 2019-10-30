@@ -15,7 +15,10 @@ const char *datafile = "lab001.data";
 ssize_t
 os_write(int fd, const void *buf, size_t count)
 {
-        return write(fd, buf, count);
+	ssize_t s;
+	s = write(fd, buf, count);
+	fsync(fd);
+	return s;
 }
 
 ssize_t
@@ -71,7 +74,7 @@ main()
 {
 	int fd;
 
-	if ((fd = open(datafile, O_CREAT | O_WRONLY | O_DSYNC, 0644)) < 0) {
+	if ((fd = open(datafile, O_CREAT | O_WRONLY, 0644)) < 0) {
 		printf("ERROR: writing to %s\n", datafile);
 		exit(1);
 	}
