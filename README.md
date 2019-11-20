@@ -20,7 +20,7 @@ If you choose to setup your own system, here is a script for Ubuntu:
 ```
 sudo apt-get update
 sudo apt-get install sysstat bpfcc-tools bpftrace gcc
-git clone https://github.com/brendangregg/bpf-perf-worhshop
+git clone https://github.com/brendangregg/bpf-perf-workshop
 cd bpf-perf-workshop/src
 make && cd ..
 ```
