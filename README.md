@@ -35,6 +35,9 @@ git clone https://github.com/brendangregg/bpf-perf-workshop
 vagrant up
 ```
 
+After Vagrant finishes, the repo content will be located under
+/home/vagrant/bpf-perf-workshop
+
 
 Just for reference, you can fetch these repos:
 
