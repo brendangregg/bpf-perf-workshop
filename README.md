@@ -12,10 +12,13 @@ You can either:
 
 - SSH to a lab instance (see bit of paper), or,
 - Setup your own system with [BCC](https://github.com/iovisor/bcc) & [bpftrace](https://github.com/iovisor/bpftrace). Sample instructions below.
+- Use the supplied Vagrant box (https://www.vagrantup.com/downloads.html)
 
 #### System Setup
 
-If you choose to setup your own system, here is a script for Ubuntu:
+##### Local setup
+
+If you choose to setup your own system, here is a script for Ubuntu: (19.04 or greater required)
 
 ```
 sudo apt-get update
@@ -24,6 +27,14 @@ git clone https://github.com/brendangregg/bpf-perf-workshop
 cd bpf-perf-workshop/src
 make && cd ..
 ```
+
+##### Using Vagrant
+
+```
+git clone https://github.com/brendangregg/bpf-perf-workshop
+vagrant up
+```
+
 
 Just for reference, you can fetch these repos:
 
